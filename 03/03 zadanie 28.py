@@ -1,9 +1,7 @@
-x = 0
-y = 1
-
-l = "0 1"
-
-for i in range(10):
-    l +=str( int(l[-1])+int(l[-3]))
-    l += ' '
-print(l)
+def fib(n):
+    a=0
+    b=1 #pierwszy i drugi wyraz 0 i 1
+    for i in range(n-1): #petla ktora oblicza n-ty wyraz ciagu
+        a,b=b,a+b
+    return a # zwracana wartosc n-ty wyrazu
+print(fib(5))
